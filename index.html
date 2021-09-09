@@ -357,12 +357,24 @@
         <div class="row">
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62447.49079906955!2d-77.0801664!3d-11.976704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce300d8854e1%3A0x6a1b58f36fcc79a6!2sPlaza%20Norte!5e0!3m2!1ses!2spe!4v1631121863936!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-            <form method="get" action="">
-                <input type="text" placeholder="nombre" class="box">
-                <input type="text" placeholder="correo" class="box">
-                <input type="text" placeholder="numero" class="box">
-                <textarea name="" placeholder="mensaje" class="box" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="enviar mensaje" class="btn">
+            <form method="get" action="" id="enviar-email">
+                <input type="text" placeholder="nombre" class="box" id="nombre">
+                <input type="email" placeholder="correo" class="box" id="email">
+                <input type="text" placeholder="numero" class="box" id="numero">
+                <textarea name="" placeholder="mensaje" class="box" id="mensaje" cols="30" rows="10"></textarea>
+                
+                <div  id="spinner">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                    </div>
+                </div>
+                
+                <input type="submit" value="enviar mensaje" class="btn" id="enviar">
             </form>
         </div>
     </section>
